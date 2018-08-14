@@ -1,0 +1,42 @@
+{
+  "name": "raising_a_puppy",
+  "version": "1.0.0",
+  "description": "I'm going to keep a record of how I am raising my puppy.",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishidas/raising_a_puppy.git"
+  },
+  "author": "sawako.ishida1@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishidas/raising_a_puppy/issues"
+  },
+  "homepage": "https://github.com/ishidas/raising_a_puppy#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "react-svg-loader": "^2.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
