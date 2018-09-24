@@ -50,6 +50,25 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(pdf|jpg|png|gif|ico)$/,
+        use: [
+            {
+                loader: 'url-loader'
+            },
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|pdf|ico)$/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name]-[hash:8].[ext]'
+                },
+            },
+        ]
       }
     ]
   },

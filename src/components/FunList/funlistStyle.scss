@@ -7,8 +7,24 @@
 }
 
 :local(.article) {
-  height: 768px;
+  height: auto;
   background: #8bc34a;
   color: black;
   margin: 0;
+  list-style: none;
+  padding: 3rem 0;
+    > li {
+      background: white;
+      width: 90%;
+      margin: auto;
+    }
+    > li > h2 {
+      display: inline-block;
+      padding-top: 1rem;
+      padding-left: 3rem;
+    }
+    > li > article {
+      padding: 3rem;
+      margin-bottom: 3rem;
+    }
 }
