@@ -1,0 +1,28 @@
+:local(.facecontainer) {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10rem auto;
+}
+:local(.iconbutton) {
+  width: 10rem;
+  height: auto;
+  padding-bottom: 2rem;
+  border-radius: 10%;
+    > h3 {
+      margin-top: 0;
+      padding-top: 1rem;
+    }
+
+}
+:local(.iconbutton:hover) {
+  width: 10rem;
+  height: auto;
+  background-color: white;
+  color: #8bc34a;
+}

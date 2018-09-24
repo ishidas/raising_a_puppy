@@ -5,36 +5,17 @@ html, body {
 }
 
 body {
-  color: #2D3A40;
+  color: white;
   font-family: 'Quicksand', sans-serif;
 }
 
-:local(.facecontainer) {
-  width: 100%;
-  height: auto;
-  display: flex;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 6rem auto;
-}
-:local(.iconbutton) {
-  width: 10rem;
-  height: auto;
-  padding-bottom: 2rem;
-  border-radius: 10%;
-}
-:local(.iconbutton:hover) {
-  width: 10rem;
-  height: auto;
-  background-color: pink;
-}
+
+
+
 :local(.jumbotron) {
   width: 100%;
-  height: 30rem;
-  background-color: #FFFDD9;
+  height: 768px;
+  background-color: #2196F3;
 
     > h1 {
       position: relative;

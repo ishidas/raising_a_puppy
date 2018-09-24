@@ -7,7 +7,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   mode: 'development',
-  entry: './src/main.js',
+  entry: './src/App.js',
   output: {
      path:'/dist',
      filename: 'index.js',

@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
-import styles from './app.scss'
-import SmileIcon from './assets/svg/smile-regular.svg';
-import FrownIcon from './assets/svg/frown-regular.svg';
-class App extends Component {
+import React , { Component }from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation.js';
+import Title from './components/Title/Title.js';
+import FunList from './components/FunList/FunList.js';
+import NotSoFunList from './components/NotSoFunList/NotSoFunList.js';
 
+export default class App extends Component {
+  constructor() {
+    super()
+  }
 
   render() {
     return (
-      <section className={styles.jumbotron}>
-        <h1 className={styles.typewriter}>Raising a Puppy</h1>
-        <div className={styles.facecontainer}>
-          <div className={styles.iconbutton}>
-            <h3>Fun</h3>
-            <SmileIcon width={80} height={80}/>
+      <div>
+        <Router>
+          <div>
+            <Title />
+            <Navigation />
+            <Switch>
+              <Route component={FunList} path="/fun"/>
+              <Route component={NotSoFunList} path="/notsofun"/>
+            </Switch>
           </div>
-          <div><h3>&</h3></div>
-          <div className={styles.iconbutton}>
-            <h3>Not so Fun</h3>
-            <FrownIcon width={80} height={80}/>
-          </div>
-        </div>
-      </section>
-    );
+        </Router>
+      </div>
+    )
   }
 }
 
-export default App;
+ReactDOM.render(
+  <App />
+  , document.getElementById('app'));
