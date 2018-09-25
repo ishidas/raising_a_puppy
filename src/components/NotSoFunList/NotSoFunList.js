@@ -16,9 +16,10 @@ class NotSoFunList extends Component {
     return (
       <div className={notsofunlistStyle.outermostcontainer} ref={this.notsofunlistSection}>
         <ul className={notsofunlistStyle.article}>
-          <li>here4</li>
-          <li>here5</li>
-          <li>her63</li>
+          <li><h2>The Horror of bringing a puppy home</h2><img /><article>Tellus orci ac auctor augue mauris augue neque gravida in. Pulvinar neque laoreet suspendisse interdum consectetur libero. Sagittis id consectetur purus ut faucibus pulvinar elementum. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Sed elementum tempus egestas sed sed risus pretium quam. Viverra nibh cras pulvinar mattis nunc sed. Elit sed vulputate mi sit amet mauris commodo quis. Ac felis donec et odio. Facilisis mauris sit amet massa vitae tortor condimentum. Quisque id diam vel quam elementum pulvinar etiam non quam. In hac habitasse platea dictumst quisque sagittis. Morbi blandit cursus risus at ultrices mi tempus.
+          </article></li>
+          <li><article>here5</article></li>
+          <li><article>here6</article></li>
         </ul>
       </div>
     )
