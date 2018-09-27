@@ -2,10 +2,10 @@
   "name": "raising_a_puppy",
   "version": "1.0.0",
   "description": "I'm going to keep a record of how I am raising my puppy.",
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "build": "webpack src/App.js --output dist/index.js --mode development"
+    "build": "webpack src/index.js --output dist/index.js --mode development"
   },
   "repository": {
     "type": "git",

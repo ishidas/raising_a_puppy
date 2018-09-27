@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
@@ -7,7 +8,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   mode: 'development',
-  entry: './src/App.js',
+  entry: './src/index.js',
   output: {
      path:'/dist',
      filename: 'index.js',
@@ -49,14 +50,6 @@ module.exports = {
               jsx: true // true outputs JSX tags
             }
           }
-        ]
-      },
-      {
-        test: /\.(pdf|jpg|png|gif|ico)$/,
-        use: [
-            {
-                loader: 'url-loader'
-            },
         ]
       },
       {
