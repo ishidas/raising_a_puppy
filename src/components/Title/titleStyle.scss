@@ -25,6 +25,16 @@
     }
 }
 
+:local(.imagecontainer) {
+  width: 100%;
+  height: auto;
+  text-align: center;
+    position: relative;
+    top: 6rem;
+  > img {
+    border-radius: 50%;
+  }
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom';
-import titleStyle from './titleStyle.scss'
-
+import titleStyle from './titleStyle.scss';
+import babyOlive from '../../../images/babyolive.jpg';
 
 export default class Title extends Component {
 
@@ -13,6 +13,7 @@ export default class Title extends Component {
     return (
         <section className={titleStyle.jumbotron}>
           <h1 className={titleStyle.typewriter}>Raising a Puppy</h1>
+          <div className={titleStyle.imagecontainer}><img src={babyOlive} width="300px" /></div>
         </section>
     );
   }
