@@ -1,0 +1,53 @@
+@import '../../global.scss';
+$admin-baby-blue: #9ed5ed;
+$light-grey-border: #c8c8c8;
+
+:local(.formcontainer) {
+  min-height: 100vh;
+  background-color: $admin-baby-blue;
+
+  > h1 {
+    padding: 6vh 0 0 9vw;
+    margin: 0;
+  }
+}
+
+:local(form) {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 3%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+   > input, textarea, span, button {
+     width: 100%;
+     display: block;
+     border: none;
+   }
+   > input[type="text"] {
+     width: 94%;
+     line-height: 2rem;
+     padding: 3%;
+     border-bottom: 1px solid $light-grey-border;
+   }
+   > textarea {
+     width: 94%;
+     min-height: 65vh;
+     overflow: scroll;
+     padding: 3%;
+   }
+   > input[type="submit"] {
+     width: 6rem;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     padding: 1rem;
+     background-color: grey;
+     color: white;
+     font-size: medium;
+   }
+   > input[type="submit"]:hover {
+     background-color: $main-aqua-blue;
+     color: white;
+     font-size: medium;
+   }
+}

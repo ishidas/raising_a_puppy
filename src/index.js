@@ -5,6 +5,7 @@ import Navigation from './components/Navigation/Navigation.js';
 import Title from './components/Title/Title.js';
 import FunList from './components/FunList/FunList.js';
 import NotSoFunList from './components/NotSoFunList/NotSoFunList.js';
+import Admin from './components/Admin/Admin.js';
 
 export default class App extends Component {
   constructor() {
@@ -19,6 +20,7 @@ export default class App extends Component {
             <Title />
             <Navigation />
             <Switch>
+              <Route component={Admin} path="/admin"/>
               <Route component={FunList} path="/fun"/>
               <Route component={NotSoFunList} path="/notsofun"/>
             </Switch>
