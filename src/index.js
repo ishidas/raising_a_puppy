@@ -20,6 +20,7 @@ export default class App extends Component {
             <Title />
             <Navigation />
             <Switch>
+              <Route exact path="/"/>
               <Route component={Admin} path="/admin"/>
               <Route component={FunList} path="/fun"/>
               <Route component={NotSoFunList} path="/notsofun"/>
