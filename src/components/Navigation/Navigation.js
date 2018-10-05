@@ -19,9 +19,6 @@ export default class Navigation extends Component {
               <SmileIcon width={80} height={80}/>
             </div>
           </Link>
-
-          <div><h3>&</h3></div>
-
           <Link to="/notsofun" style={{textDecoration: 'none', color: 'white'}}>
             <div className={navigationStyle.iconbutton}>
               <h3>Not so Fun</h3>

@@ -3,16 +3,17 @@
 
 :local(.article) {
   height: auto;
-  background: $main-avocado-green;
+  background: $main-aqua-blue-gradient;
   color: $main-font-colour-black;
   margin: 0;
   list-style: none;
   padding: 3rem 0;
 
     > li {
-      background: white;
+      background: #5bc0eb6b;
       width: 90%;
       margin: 3rem auto;
+      box-shadow: 0.3rem 0.3rem 0.5rem #00000024;
     }
     > li > h2 {
       display: inline-block;
