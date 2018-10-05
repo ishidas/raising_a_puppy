@@ -15,6 +15,7 @@
       height: 10rem;
     }
 }
+
 :local(.iconbutton) {
   width: 10rem;
   height: auto;
@@ -29,6 +30,16 @@
 :local(.iconbutton:hover) {
   width: 10rem;
   height: auto;
-  background-color: $main-plain-white;
-  color: $main-avocado-green;
+  background-color: #6ec6ec;
+  // color: $main-avocado-green;
+}
+
+:local(.iconbutton:active) {
+  background-color: #6ec6ec;
+  box-shadow: 0.1rem 0.1rem #0000004f inset;
+  transform: translateY(0.2rem);
+    > h3 {
+      margin-top: 0;
+      padding-top: 1rem;
+    }
 }

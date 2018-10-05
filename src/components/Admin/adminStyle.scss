@@ -32,7 +32,7 @@ $light-grey-border: #c8c8c8;
    }
    > textarea {
      width: 94%;
-     min-height: 65vh;
+     min-height: 55vh;
      overflow: scroll;
      padding: 3%;
    }
@@ -49,5 +49,12 @@ $light-grey-border: #c8c8c8;
      background-color: $main-aqua-blue;
      color: white;
      font-size: medium;
+   }
+   > input[type="submit"]:active {
+     background-color: $main-aqua-blue;
+     color: white;
+     font-size: medium;
+     box-shadow: 0.1rem 0.1rem #0000004f inset;
+     transform: translateY(0.1rem);
    }
 }

@@ -11,10 +11,11 @@ export default class Navigation extends Component {
   }
 
   render() {
+
     return (
-        <div className={navigationStyle.facecontainer}>
-          <Link to="/fun" style={{textDecoration: 'none', color: 'white'}} className={navigationStyle.linkStyle}>
-            <div className={navigationStyle.iconbutton} >
+        <div className={navigationStyle.facecontainer} >
+          <Link to="/fun" style={{textDecoration: 'none', color: 'white'}} >
+            <div className={navigationStyle.iconbutton}>
               <h3>Fun</h3>
               <SmileIcon width={80} height={80}/>
             </div>
