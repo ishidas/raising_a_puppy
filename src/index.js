@@ -1,4 +1,4 @@
-import React , { Component }from 'react';
+import React , { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation.js';
@@ -8,8 +8,8 @@ import NotSoFunList from './components/NotSoFunList/NotSoFunList.js';
 import Admin from './components/Admin/Admin.js';
 
 export default class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
   }
 
   render() {

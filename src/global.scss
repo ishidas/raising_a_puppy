@@ -20,3 +20,9 @@ body {
   color: $main-plain-white;
   font-family: $main-font-family;
 }
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        height: 100vh;
+    }
+}

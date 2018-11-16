@@ -2,20 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import adminStyle from './adminStyle.scss';
 import config from '../../config.js';
-
-require("firebase/auth");
-require("firebase/database");
-
-var app = firebase.initializeApp(
-  {
-    apiKey: config.apiKey,
-    authDomain: config.authDomain,
-    databaseURL: config.databaseURL,
-    projectId: config.projectId,
-    storageBucket: config.storageBucket,
-    messagingSenderId: config.messagingSenderId
-  }
-);
+import service from '../service';
 
 export default class Admin extends Component {
   constructor(props) {
@@ -36,10 +23,14 @@ export default class Admin extends Component {
     this.adminForm.current.scrollIntoView();
   }
   submitArticleHandler(e) {
+    console.log('submitArticleHandler')
+
     e.preventDefault();
-    alert('submitted!')
+    service.create.call(this, this.state)
+
   }
   handleFieldsChange(e) {
+    console.log('handleFieldsChange')
     switch (e.target.name) {
       case 'title':
         this.setState({title: e.target.value})
